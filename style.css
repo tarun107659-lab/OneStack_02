@@ -1,0 +1,135 @@
+/* Global Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #222;
+  background-color: #f9f9f9;
+  padding-top: 70px; /* Prevents content from hiding under sticky header */
+}
+
+/* Header (Sticky Navigation) */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0a3d91;
+  color: white;
+  padding: 10px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.logo {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to right, #0a3d91, #0078d7);
+  color: white;
+}
+
+.btn {
+  background: white;
+  color: #0a3d91;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Sections */
+section {
+  padding: 60px 40px;
+}
+
+h2 {
+  color: #0a3d91;
+  margin-bottom: 20px;
+}
+
+/* Services */
+.service-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Projects */
+.project-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  flex: 1;
+  min-width: 250px;
+}
+
+.project-card h3 {
+  color: #0a3d91;
+  margin-bottom: 10px;
+}
+
+/* Client Logos Carousel */
+.client-carousel {
+  margin-top: 40px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.client-carousel h3 {
+  margin-bottom: 20px;
+  color: #0a3d91;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 40px;
+  animation: scroll 20s linear infinite;
+}
+
+.carousel-track img {
+  height: 60px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.carousel-track img:hover {
+  transform: scale
